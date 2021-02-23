@@ -1,0 +1,21 @@
+USE [SQL_Projekat_DexyCO]
+GO
+
+/****** Object:  Table [dbo].[Magacin]    Script Date: 16-Feb-21 1:57:30 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Magacin](
+	[magacinID] [int] IDENTITY(1,1) NOT NULL,
+	[adresa] [nvarchar](50) NULL,
+	[kapacitet] [bit] NOT NULL,
+ CONSTRAINT [PK_Magacin] PRIMARY KEY CLUSTERED 
+(
+	[magacinID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+

@@ -1,0 +1,21 @@
+USE [SQL_Projekat_DexyCO]
+GO
+
+/****** Object:  Table [dbo].[TipOdece]    Script Date: 16-Feb-21 1:58:38 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TipOdece](
+	[tipOdeceID] [int] IDENTITY(1,1) NOT NULL,
+	[nazivTipa] [nvarchar](50) NOT NULL,
+	[sezona] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_TipOdece] PRIMARY KEY CLUSTERED 
+(
+	[tipOdeceID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
